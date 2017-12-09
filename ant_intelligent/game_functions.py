@@ -79,4 +79,4 @@ def create_foods(game_settings,screen,foods):
 	foods_num = game_settings.food_limit
 	for food_num in range(foods_num):
 		new_food = Food(game_settings,screen)
-		Foods.add(new_food)
+		Food.add(new_food)

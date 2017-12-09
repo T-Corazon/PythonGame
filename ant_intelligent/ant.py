@@ -8,16 +8,14 @@ from pygame.sprite import Sprite
 class Ant(Sprite):
 	
 	def __init__(self,game_settings,screen):
-		
 		super(Ant,self).__init__()
+		self.game_settings = game_settings
+		self.screen = screen
 			
-			self.game_settings = game_settings
-			self.screen = screen
-			
-			self.body_size = (1,1)
-			self.color = (255,255,255)
-			self.load_capability = 4
-			
+		self.body_size = (1,1)
+		self.color = (255,255,255)
+		self.load_capability = 4
+
 ########################################################################
 ####					Function:Action Module						####
 ####	Action:Define searching,following and transporting			####
@@ -39,26 +37,24 @@ class Ant(Sprite):
 			transport_mod()
 
 	def search_mod(self):
-		
 		smell_normal_mod()
 
 	def follow_mod(self):
-		
 		smell_none_mod()
 
 	def transport_mod(self):
-		
 		smell_double_mod()
 
 ########################################################################
 ####					Function:Smell Module						####
-####	Action:Define the smell of search,follow and transport.	####
+####	Action:Define the smell of search,follow and transport. 	####
 ########################################################################
 
 def smell_none_mod(self):
-	
+	pass
 
 def smell_normal_mod(self):
-	
+	pass
 
 def smell_double_mod(self):
+	pass
